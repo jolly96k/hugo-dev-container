@@ -1,0 +1,13 @@
+# Directory
+.git
+.vscode
+hugo
+image
+script
+
+# File
+.dockerignore
+.gitlab-ci.yml
+.gitmodules
+dockerfile
+README.md

@@ -1,0 +1,16 @@
+services:
+  hugo-dev:
+    image: hugo-dev:latest
+    container_name: ze-hugo-dev
+    restart: always
+    environment:
+      - HUGO_PROJECT_NAME=${HUGO_PROJECT_NAME}
+    volumes:
+      - ./volume/usr/local/share/hugo_workspace:/usr/local/share/hugo_workspace
+      - /etc/group:/etc/group:ro
+      - /etc/passwd:/etc/passwd:ro
+      - /usr/share/zoneinfo/Asia/Tokyo:/etc/localtime:ro
+    stdin_open: true
+    tty: true
+    user: ${USER_ID}:${GROUP_ID}
+    working_dir: /usr/local/share/hugo_workspace

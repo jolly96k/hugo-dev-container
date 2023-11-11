@@ -1,0 +1,20 @@
+{
+    "service": "hugo-dev",
+    "workspaceFolder": "/usr/local/share/hugo_workspace",
+    "dockerComposeFile": "../compose.yml",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.renderWhitespace": "all",
+                "files.trimTrailingWhitespace": true,
+                "[markdown]": {
+                    "files.trimTrailingWhitespace": false
+                }
+            },
+            "extensions": [
+                "eamodio.gitlens",
+                "MS-CEINTL.vscode-language-pack-ja"
+            ]
+        }
+    }
+}

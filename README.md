@@ -24,12 +24,20 @@ $ cd hugo-dev-container
 $ bash ./script/build_container_image.sh
 </pre>
 3. 開発コンテナを起動する  
-    1. F1→"Dev Containers: Open Folder in Container..."→hugoを選択してOK  
-    開発コンテナが起動できたら成功
+    1. F1→"Dev Containers: Open Folder in Container..."→hugoを選択してOK
     ![Dev Container](./image/dev_container.png)
-    2. ブラウザで[http://127.0.0.1:1313](http://127.0.0.1:1313)にアクセス  
-    ポートフォリオが表示されたら成功
+    開発コンテナが起動できたら成功
+    2. 開発コンテナでターミナルを開き、run_hugo_server.shを実行
+    ![run_hugo_server](./image/run_hugo_server.png)
+    ![port_forward](./image/port_forward.png)
+    自動的に開発コンテナの1313番ポートがフォワードされる
+    3. ブラウザで[http://127.0.0.1:1313](http://127.0.0.1:1313)にアクセス
     ![http://127.0.0.1:1313](./image/portfolio.png)
+    ポートフォリオが表示されたら成功
+
+## 備考
+hugo/volume/usr/local/share/hugo_workspace配下に他のHugoプロジェクトをcloneして開発コンテナを起動できます。  
+その場合はhugo/.envのHUGO_PROJECT_NAMEを適宜変更してください。
 
 ## 参考情報
 * https://gohugo.io/

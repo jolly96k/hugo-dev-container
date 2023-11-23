@@ -6,6 +6,7 @@
         "vscode": {
             "settings": {
                 "editor.renderWhitespace": "all",
+                "files.trimFinalNewlines": true,
                 "files.trimTrailingWhitespace": true,
                 "[markdown]": {
                     "files.trimTrailingWhitespace": false

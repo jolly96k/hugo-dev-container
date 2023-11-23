@@ -1,4 +1,0 @@
-[submodule "hugo/volume/usr/local/share/hugo_workspace"]
-	path = hugo/volume/usr/local/share/hugo_workspace
-	url = https://rm.zetsubo.net/ze/zetsubo-engineer.git
-	branch = site

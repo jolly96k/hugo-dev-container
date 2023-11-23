@@ -8,15 +8,15 @@ Hugoと開発コンテナを使ってポートフォリオを作成するため�
     * [Supported platforms](https://docs.docker.com/engine/install/#server)  
     * [Install Docker Engine on Debian](https://docs.docker.com/engine/install/debian/#install-using-the-convenience-script)
     * [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
-* ログインユーザーがdockerグループに追加されていること
-    * [Manage Docker as a non-root user](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user)
+* Dockerがルートレスモードで動作していること
+    * [Run the Docker daemon as a non-root user (Rootless mode)](https://docs.docker.com/engine/security/rootless/)
 * VSCodeと拡張機能がインストールされていること
     * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
 ## 環境構築
 1. リポジトリをクローンする
 <pre>
-$ git clone --recursive http://rm.zetsubo.net/ze/hugo-dev-container.git
+$ git clone https://rm.zetsubo.net/ze/hugo-dev-container.git --recurse-submodules
 </pre>
 2. build_container_image.shを実行する
 <pre>

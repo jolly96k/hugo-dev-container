@@ -2,7 +2,6 @@
 
 set -euxo pipefail
 
-SCRIPT_DIRNAME=$(cd $(dirname ${0}) && pwd)
 DOCKER_PROJECT_PATH=$(cd $(dirname ${0}) && cd ../ && pwd)
 
 cd ${DOCKER_PROJECT_PATH}

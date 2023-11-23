@@ -15,26 +15,26 @@ Hugoと開発コンテナを使ってポートフォリオを作成するため�
 
 ## 環境構築
 1. リポジトリをクローンする
-    <pre>
-    $ git clone https://rm.zetsubo.net/ze/hugo-dev-container.git --recurse-submodules
-    </pre>
+    ```bash
+    $ git clone https://rm.zetsubo.net/ze/hugo-dev-container.git
+    ```
 2. build_container_image.shを実行する
-    <pre>
+    ```bash
     $ cd hugo-dev-container
     $ bash ./script/build_container_image.sh
-    </pre>
+    ```
 3. clone_hugo_project.shを実行する
-    <pre>
+    ```bash
     $ bash ./hugo/volume/usr/local/share/hugo_workspace/clone_hugo_project.sh
-    </pre>
+    ```
 4. 開発コンテナを起動する
     1. F1→"Dev Containers: Open Folder in Container..."→hugoを選択してOK
         ![Dev Container](./image/dev_container.png)
         開発コンテナが起動できたら成功
     2. 開発コンテナでターミナルを開き、run_hugo_server.shを実行
-        <pre>
+        ```bash
         $ bash ./zetsubo-engineer/script/run_hugo_server.sh
-        </pre>
+        ```
         ![run_hugo_server](./image/run_hugo_server.png)
         ![port_forward](./image/port_forward.png)
         自動的に開発コンテナの1313番ポートがフォワードされる

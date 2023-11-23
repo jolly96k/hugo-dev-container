@@ -1,7 +1,7 @@
 {
-    "service": "hugo-dev",
-    "workspaceFolder": "/usr/local/share/hugo_workspace",
-    "dockerComposeFile": "../compose.yml",
+    "name": "hugo-dev-container",
+    "service": "hugo",
+    "dockerComposeFile": "../../compose.yml",
     "customizations": {
         "vscode": {
             "settings": {

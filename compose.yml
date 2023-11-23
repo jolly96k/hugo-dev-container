@@ -1,10 +1,10 @@
 services:
-  hugo-dev:
+  hugo:
     image: hugo-dev:latest
-    container_name: ze-hugo-dev
+    container_name: hdc-hugo
     restart: always
     volumes:
-      - ./volume/usr/local/share/hugo_workspace:/usr/local/share/hugo_workspace
+      - ./hugo/volume/usr/local/share/hugo_workspace:/usr/local/share/hugo_workspace
       - /usr/share/zoneinfo/Asia/Tokyo:/etc/localtime:ro
     stdin_open: true
     tty: true

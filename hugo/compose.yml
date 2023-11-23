@@ -3,8 +3,6 @@ services:
     image: hugo-dev:latest
     container_name: ze-hugo-dev
     restart: always
-    environment:
-      - HUGO_PROJECT_NAME=${HUGO_PROJECT_NAME}
     volumes:
       - ./volume/usr/local/share/hugo_workspace:/usr/local/share/hugo_workspace
       - /usr/share/zoneinfo/Asia/Tokyo:/etc/localtime:ro

@@ -2,9 +2,10 @@ services:
   hugo:
     image: hugo-dev:latest
     container_name: hdc-hugo
-    restart: always
+    # restart: always
     volumes:
       - ./hugo/volume/usr/local/share/hugo_workspace:/usr/local/share/hugo_workspace
+      - ./hugo/volume/root/.vscode-server:/root/.vscode-server
       - /usr/share/zoneinfo/Asia/Tokyo:/etc/localtime:ro
     stdin_open: true
     tty: true
